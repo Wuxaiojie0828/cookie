@@ -1,0 +1,68 @@
+/* 重置浏览器默认的样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 页面容器样式 */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* 标题样式 */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 输入框和按钮的样式 */
+#cookieInfo input[type="text"] {
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: calc(100% - 165px); /* 减去按钮的宽度和间距 */
+}
+
+#cookieInfo button {
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#cookieInfo button:hover {
+    background-color: #0056b3;
+}
+
+/* 用户名显示段落的样式 */
+#usernameDisplay {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 响应式设计：当屏幕宽度小于600px时，调整样式 */
+@media (max-width: 600px) {
+    #cookieInfo input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #cookieInfo button {
+        width: calc(50% - 10px);
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
